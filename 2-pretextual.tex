@@ -49,25 +49,33 @@
   \vspace*{\fill}
   
   \abntex@ifnotempty{\imprimirpreambulo}{%
-    \hspace{.45\textwidth}
-    \begin{minipage}{.5\textwidth}
-    \SingleSpacing
-    \imprimirpreambulo
+    % \hspace{.45\textwidth}
+    % \begin{minipage}{.5\textwidth}
+    \hspace{.39\textwidth}
+    \begin{minipage}{.6\textwidth}
+        \SingleSpacing
+        \imprimirpreambulo
     \end{minipage}%
     \vspace*{\fill}
   }%
-
+  
   \abntex@ifnotempty{\imprimirorientador}{%
-  \hspace{.45\textwidth}
-  \begin{minipage}{.5\textwidth}
-	{\imprimirorientadorRotulo~\newline\imprimirorientador}%
-  \end{minipage}%
+%   \hspace{.45\textwidth}
+%   \begin{minipage}{.5\textwidth}
+    \hspace{.39\textwidth}
+    \begin{minipage}{.6\textwidth}
+	    {\imprimirorientadorRotulo~\newline Profº. Dr. \imprimirorientador}%
+    \end{minipage}%
   }%
   
+  \vspace*{.005\textwidth}
+  
   \abntex@ifnotempty{\imprimircoorientador}{%
-  \hspace{.45\textwidth}
-  \begin{minipage}{.5\textwidth}
-	{\imprimircoorientadorRotulo~\newline\imprimircoorientador}%
+%   \hspace{.45\textwidth}
+%   \begin{minipage}{.5\textwidth}
+    \hspace{.39\textwidth}
+    \begin{minipage}{.6\textwidth}
+    {\imprimircoorientadorRotulo~\newline Profª. Dra. \imprimircoorientador}%
   \end{minipage}%
   }%
   
@@ -100,7 +108,7 @@
     	\fbox{
             \begin{minipage}[t]{1,5cm} 
                 \vspace{0.5cm} 
-                D383m %Algum número que o bibliotecario ira gerar
+                S358j %Algum número que o bibliotecário ira gerar
             \end{minipage}
             
             \begin{minipage}[t]{11cm}	% Largura
@@ -110,30 +118,26 @@
                 Santicioli, Johnata Souza
             	
             	\hspace{0.5cm} 
-                \imprimirtitulo  / \imprimirautor. -- \imprimirdata.
+                \imprimirtitulo  / \imprimirautor; orientador:  \imprimirorientador; coorientadora: \imprimircoorientador. -- \imprimirlocal: \imprimirdata.\\
             	
-            	\hspace{0.5cm} 
-                \pageref{LastPage} p. % : il. (algumas color.) 
-                ; 30 cm.\\
-            	
-                \hspace{0.5cm}
-            	\imprimirtipotrabalho~--~Instituto Federal do Rio Grande do Sul, Programa de Metrado Profissional em Informática na Educação, Porto Alegre, RS, \imprimirdata. \hfill 
+            	\hspace{0.5cm}
+                \pageref{LastPage} f.\\ % : il. (algumas color.) 
+                % ; 30 cm.\\
                 
+            	
                 \hspace{0.5cm}
-                \imprimirorientadorRotulo~\imprimirorientador ;
-                \imprimircoorientadorRotulo~\imprimircoorientador\\
+            	\imprimirtipotrabalho~--~Instituto Federal do Rio Grande do Sul -- Campus Porto Alegre. Programa de Metrado Profissional em Informática na Educação, \imprimirlocal, \imprimirdata. \imprimirorientadorRotulo~Profº. Dr. \imprimirorientador ;
+                \imprimircoorientadorRotulo~Profª. Dra. \imprimircoorientador.\\
             	
             	\hspace{0.5cm}
             		1. Alfabetização e Educação Financeira
             		2. Ensino Médio Integrado
-            		3. Institutos Federais
+            		3. Institutos Federais do Brasil
             		4. Jogos Sérios
-            		5. Tecnologia Educacional
-            		I. Miletto, Evandro Manara, orient.
-                    II. Procasko, Josiane Carolina S. R., coorient. 
+            		5. Epistemologia Genética Piagetiana
+            		I. Miletto, Evandro Manara.
+                    II. Procasko, Josiane Carolina Soares Ramos.
                     III. Título.\\
-            % 		I. \imprimirtitulo \\
-            %       II. \imprimirorientador \\
                 
             	\hspace{8.75cm} CDU 621.3 %algum outro numero
             \end{minipage}
@@ -202,7 +206,7 @@
 %  \end{center}
    
    %\assinatura{\textbf{\imprimirorientador} \\ Orientador}
-   %\assinatura{\textbf{\imprimircoorientador} \\ Coorientador} 
+   %\assinatura{\textbf{\imprimircoorientador} \\ coorientador} 
    
 %   \assinatura{Prof. Dr. Nome Sobrenome -- Unisinos \\ Avaliador}
 %   \assinatura{Prof. Dr. Nome Sobrenome -- UFRGS \\ Avaliador Externo}
@@ -213,7 +217,7 @@
  %   \hspace{.4\textwidth}
  %   \begin{minipage}{.5\textwidth}
  %   	\imprimirorientador~(Orientador) \\
- %       \imprimircoorientador~(Coorientador)
+ %       \imprimircoorientador~(coorientador)
  %   \end{minipage}%
     
 %    \vspace*{\fill}
@@ -241,15 +245,15 @@
 % ----------------------------------------------
 % Dedicatória
 % ----------------------------------------------
-\newpage
-\begin{dedicatoria}
-   \vspace*{\fill}
-   \centering
-   \noindent
-   \textit{A principal meta da educação é criar homens que sejam capazes de fazer coisas novas, não simplesmente repetir o que outras gerações já fizeram. Homens que sejam criadores, inventores, descobridores. A segunda meta da educação é formar mentes que estejam em condições de criticar, verificar e não aceitar tudo que a elas se propõe.\\
-   (Jean Piaget)} 
-   \vspace*{\fill}
-\end{dedicatoria}
+% \newpage
+% \begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \textit{A principal meta da educação é criar homens que sejam capazes de fazer coisas novas, não simplesmente repetir o que outras gerações já fizeram. Homens que sejam criadores, inventores, descobridores. A segunda meta da educação é formar mentes que estejam em condições de criticar, verificar e não aceitar tudo que a elas se propõe.\\
+%   (Jean Piaget)} 
+%   \vspace*{\fill}
+% \end{dedicatoria}
 
 % ----------------------------------------------
 % Agradecimentos
@@ -263,15 +267,18 @@
 % Epígrafe
 % ----------------------------------------------
 % Importante: O autor da epígrafe deve constar na lista de referências
-% \begin{epigrafe}
-%     \vspace*{\fill}
-% 	\begin{flushright}
-% 		\textit{``Os que se encantam com a prática sem a ciência \\
-%         são como os timoneiros que entram no navio sem timão nem bússola,\\
-%         nunca tendo certeza do seu destino."\\
-%         (Leonardo da Vinci)}
-% 	\end{flushright}
-% \end{epigrafe}
+\newpage
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{Seria uma atitude ingênua esperar que as classes dominantes desenvolvessem uma forma de educação que proporcionasse às classes dominadas perceber as injustiças sociais de maneira crítica.\\
+        (Paulo Freire)}
+    \end{flushright}
+    \begin{flushright}
+        \textit{Por que gastais o dinheiro naquilo que não é pão? E o produto do vosso trabalho naquilo que não pode satisfazer? Ouvi-me atentamente, e comei o que é bom, e a vossa alma se deleite com a gordura.\\
+        (Isaías 55.2)}
+	\end{flushright}
+\end{epigrafe}
 
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % RESUMOS
@@ -284,10 +291,10 @@
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
 	\input{./intro_tex/abs_por}
-	\vspace{\onelineskip}
-    
+% 	\vspace{\onelineskip}
+	
  	\noindent 
-	\textbf{Palavras-chaves}: Alfabetização e Educação Financeira; Ensino Médio Integrado; Institutos Federais; Jogos Sérios; Tecnologia Educacional.
+	\textbf{Palavras-chaves}: Alfabetização e Educação Financeira; Ensino Médio Integrado; Institutos Federais do Brasil; Jogos Sérios; Epistemologia Genética Piagetiana.
 \end{resumo}
 
 % ----------------------------------------------
@@ -298,10 +305,10 @@
 \begin{otherlanguage*}{english}
 
 \input{./intro_tex/abs_eng}    
-	\vspace{\onelineskip}
+% 	\vspace{\onelineskip}
  
 	\noindent 
-	\textbf{Keywords}: Literacy and Financial Education; Integrated High School; Federal Institutes; Serious Games; Educational technology.
+	\textbf{Keywords}: Literacy and Financial Education; Integrated High School; Federal Institutes of Brazil; Serious Games; Piagetian Genetic Epistemology.
 \end{otherlanguage*}
 \end{resumo}
 
@@ -367,9 +374,11 @@
 %\begin{siglas}
 %  \item[ABNT] Associação Brasileira de Normas Técnicas
 %  \item[abnTeX] ABsurdas Normas para TeX
+%\input{--siglas-abnt}
 %\end{siglas}
 
-\pdfbookmark[0]{\listtablename}{los}
+%se for usar o arquivo siglas.tex
+\pdfbookmark[0]{\listofsiglasname}{losa}
 \input{--siglas}
 \cleardoublepage
 

@@ -17,15 +17,22 @@
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % APÊNDICES
 % ||||||||||||||||||||||||||||||||||||||||||||||
-\begin{apendicesenv}
 % Imprime uma página indicando o início dos apêndices
-\partapendices
+%\partapendices
 % ----------------------------------------------
 % Apêndice
 % ----------------------------------------------
-\includepdf[pages=-]{apendices/apendice-a_questionario-de-avaliacao-de-aprendizagem.pdf}
-\includepdf[pages=-]{apendices/apendice-b_questionario-de-avaliacao-do-curso.pdf}
+\begin{apendicesenv}
+    \chapter{Avaliação da Aprendizagem}\label{apend-a}
+    \input{apendices/apendice-a}
+    
+    \chapter{Avaliação do Curso}\label{apend-b}
+    \input{apendices/apendice-b}
+    
+%\includepdf[pages=-]{apendices/apendice.pdf}
+
 \end{apendicesenv}
+
 % ||||||||||||||||||||||||||||||||||||||||||||||
 % ANEXOS
 % ||||||||||||||||||||||||||||||||||||||||||||||

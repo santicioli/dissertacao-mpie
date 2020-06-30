@@ -47,7 +47,7 @@
 \renewcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
 \renewcommand{\cftpartfont}{\normalfont\bfseries}
 \renewcommand{\ABNTEXsectionfont}{\bfseries}
-\renewcommand{\ABNTEXsectionfontsize}{\large}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
 \renewcommand{\ABNTEXsubsectionfont}{\normalfont}
 \renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
 \renewcommand{\cftsubsectionfont}{\normalfont}
@@ -60,15 +60,29 @@
 \settocdepth{subsubsection} % configura sumário para apresentar subseções até o quarto nível
 \setsecnumdepth{subsubsection} % configura para numerar subseções até o quarto nível. Subseções de quinto nível não conterão numeração.
 
-\addto\captionsbrazil{\renewcommand{\listfigurename}{Lista de figuras}} % Altera nome da lista de ilustrações para lista de figuras
+\addto\captionsbrazil{\renewcommand{\listfigurename}{Lista de Figuras}} % Altera nome da lista de ilustrações para lista de figuras
 
 \addto{\captionsbrazil}{\renewcommand{\bibname}{Refer\^encias Bibliogr\'aficas}} % Altera nome Referencias para Referencias Bibliogarficas
+
+\addto\captionsbrazil{\renewcommand{\listtablename}{Lista de Tabelas}}
+
+%----------------------------------------------
+%crias siglas e abreviaturas
+\newcommand{\siglasname}{Siglas}
+\newcommand{\listofsiglasname}{Lista de Abreviaturas e Siglas}
+\newfloat[chapter]{sigla}{loq}{\siglasname}
+\newlistof{listofsiglas}{losa}{\listofsiglasname}
+\newlistentry{siglas}{losa}{0}
+\counterwithout{sigla}{chapter}
+\renewcommand{\cftsiglasname}{\siglasname\space}
+\renewcommand*{\cftsiglasaftersnum}{\hfill--\hfill}
+%---------------------------------------------------
 
 % ----------------------------------------------
 % Para criar Quadros - ABNT 14724 5.10
 % ----------------------------------------------
 \newcommand{\quadroname}{Quadro}
-\newcommand{\listofquadrosname}{Lista de quadros}
+\newcommand{\listofquadrosname}{Lista de Quadros}
 \newfloat[chapter]{quadro}{loq}{\quadroname}
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
@@ -80,7 +94,7 @@
 % Para criar Gráficos
 % ----------------------------------------------
 \newcommand{\graficoname}{Gráfico}
-\newcommand{\listofgraficosname}{Lista de gráficos}
+\newcommand{\listofgraficosname}{Lista de Gráficos}
 \newfloat[chapter]{grafico}{logf}{\graficoname}
 \newlistof{listofgraficos}{logf}{\listofgraficosname}
 \newlistentry{grafico}{logf}{0}
